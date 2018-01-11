@@ -15,7 +15,9 @@ const store = createStore(
 
 console.log(store);
 
-/* Pass store to App */
+/* Provider will pass data from the store to any React components it needs,
+ whenever any of the components render or
+dispatch an action it will be easier to do using Provider */
 ReactDOM.render(
     <Provider store={store}>
         <App />
